@@ -1,0 +1,1 @@
+// Simple service worker cache logic

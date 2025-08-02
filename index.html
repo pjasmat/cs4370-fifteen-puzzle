@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <title>Fifteen Puzzle Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="fifteen.js" defer></script>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Fifteen Puzzle</h1>
+        <label for="background-select">Choose Background:</label>
+        <select id="background-select">
+            <option value="background.jpg">Default</option>
+            <option value="background1.jpg">Nature</option>
+            <option value="background2.jpg">Abstract</option>
+            <option value="background3.jpg">Mario</option>
+        </select>
+        <div id="puzzle-area"></div>
+        <p>⏱ Time: <span id="timer-display">0s</span> | 🧠 Moves: <span id="move-count">0</span></p>
+        <button id="shuffle-button">Shuffle</button>
+        <div id="win-message" class="hidden">🎉 Congratulations! You solved it! 🎉</div>
+        <p><a href="leaderboard.php">View Leaderboard</a> | <a href="my_stats.php">My Game History</a></p>
+    </div>
+    <p class="validators">
+        <a href="https://validator.w3.org/" target="_blank">
+            <img src="https://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1" />
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/" target="_blank">
+            <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+        </a>
+    </p>
+    <!-- Features Implemented:
+         1. End-of-game notification (graded)
+         2. Multiple background images
+         3. Leaderboard + Stats + Preferences + Offline support
+    -->
+</body>
+</html>

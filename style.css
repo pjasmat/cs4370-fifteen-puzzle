@@ -1,1 +1,40 @@
-/* Placeholder - full CSS added in earlier step */
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+table {
+    border-spacing: 5px;
+}
+td {
+    width: 100px;
+    height: 100px;
+}
+button {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    border: 1px solid #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+.empty {
+    background-color: #ccc;
+}
+.reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+}

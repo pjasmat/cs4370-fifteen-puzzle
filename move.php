@@ -11,6 +11,7 @@ function findEmpty() {
 }
 
 function isAdjacent($i1, $j1, $i2, $j2) {
+    $_SESSION['moves']++;
     return (abs($i1 - $i2) + abs($j1 - $j2)) === 1;
 }
 

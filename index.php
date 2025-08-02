@@ -1,5 +1,13 @@
 <?php
 session_start();
+if (!isset($_SESSION['start_time'])) {
+    $_SESSION['start_time'] = time();
+}
+
+if (!isset($_SESSION['moves'])) {
+    $_SESSION['moves'] = 0;
+}
+
 
 function initializeBoard() {
     $tiles = range(1, 15);
@@ -31,6 +39,11 @@ function displayBoard() {
     }
     echo '</table></form>';
     echo '<form method="GET"><button class="reset" name="reset" value="1">Restart</button></form>';
+
+    $elapsed = time() - $_SESSION['start_time'];
+    echo "<p>Moves: {$_SESSION['moves']} | Time: {$elapsed} seconds</p>";
+
+
 }
 
 if (!isset($_SESSION['background'])) {
@@ -40,6 +53,8 @@ if (!isset($_SESSION['background'])) {
 
 if (!isset($_SESSION['board']) || isset($_GET['reset'])) {
     initializeBoard();
+    $_SESSION['moves'] = 0;
+    $_SESSION['start_time'] = time();
 }
 ?>
 <!DOCTYPE html>

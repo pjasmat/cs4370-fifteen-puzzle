@@ -68,5 +68,13 @@ if (!isset($_SESSION['board']) || isset($_GET['reset'])) {
 </head>
 <body>
     <?php displayBoard(); ?>
+<form method="POST" action="logout.php" style="text-align: right; margin: 10px;">
+        <button type="submit" style="padding: 8px 15px; background-color: #7f74ff; border: none; border-radius: 8px; color: white; cursor: pointer;">
+            Logout
+        </button>
+    </form>
+
+    <?php displayBoard(); ?> 
+    <a href="index2.php" class="home-button">🏠 Return to Homepage</a>
 </body>
 </html>

@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['username'] = $user['username'];
         $_SESSION['is_admin'] = $user['is_admin'] ?? false;
 
-        header("Location: game.php");
+        header("Location: index.php");
         exit;
     } else {
         $_SESSION['login_error'] = "Invalid username or password.";

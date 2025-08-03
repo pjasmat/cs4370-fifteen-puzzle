@@ -39,6 +39,8 @@ function displayBoard() {
     }
     echo '</table></form>';
     echo '<form method="GET"><button class="reset" name="reset" value="1">Restart</button></form>';
+    echo '<form method="GET" action="image_select.php" style="margin-top: 10px;"><button type="submit">Change Background</button></form>';
+
 
     $elapsed = time() - $_SESSION['start_time'];
     echo "<p>Moves: {$_SESSION['moves']} | Time: {$elapsed} seconds</p>";

@@ -73,8 +73,6 @@ if (!isset($_SESSION['board']) || isset($_GET['reset'])) {
             Logout
         </button>
     </form>
-
-    <?php displayBoard(); ?> 
     <a href="index2.php" class="home-button">🏠 Return to Homepage</a>
 </body>
 </html>

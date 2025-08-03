@@ -1,6 +1,8 @@
 <?php
-session_start();
+require 'db.php';
+
 session_unset();
 session_destroy();
-echo "Logged out successfully.";
-?>
+
+header("Location: index2.php");
+exit;
